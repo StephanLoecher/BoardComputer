@@ -20,7 +20,7 @@ public class Main {
         System.out.println("Please tell me the Seatamount.");
         int seats = input.nextInt();
 
-        Car car = carFactory.GenerateCar(name, seats, false, CarType.Small, FuelType.Electro);
+        Car car = carFactory.GenerateCar(name, seats, false, CarType.Small, FuelType.Gasoline);
 
         car.PrintData();
     }

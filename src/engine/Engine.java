@@ -12,6 +12,6 @@ public class Engine {
     }
 
     public String PrintEngineData() {
-        return "HorsePower: " + HorsePower + " " + "ConsumptionAt100Km: " + ConsumptionAt100Km + " " + "Cylinder: " + Cylinder;
+        return "HorsePower: " + HorsePower + ", " + "ConsumptionAt100Km: " + ConsumptionAt100Km + ", " + "Cylinder: " + Cylinder;
     }
 }

@@ -26,8 +26,8 @@ public class Car {
     public void PrintData() {
         System.out.println("Name: " + Name);
         System.out.println("Seats: " + Seats);
-        System.out.println("Engine: " + Engine);
-        //   System.out.println("Engine: " + Engine.PrintEngineData());
+        // System.out.println("Engine: " + Engine);
+        System.out.println("Engine: " + Engine.PrintEngineData());
         System.out.println("CarType: " + Type);
         System.out.println("FuelType: " + FuelType);
         System.out.println("Fuel: " + Fuel);
