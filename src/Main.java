@@ -1,15 +1,27 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
-    public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+import car.Car;
+import car.CarType;
+import car.FuelType;
+import car_utilities.CarFactory;
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+import java.util.Scanner;
+
+public class Main {
+
+    private static final CarFactory carFactory = new CarFactory();
+
+    public static void main(String[] args) {
+
+        //Car car = carFactory.GenerateCar("Mondeo", 4, true, CarType.Small, FuelType.Electro);
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Please tell me the Modelname.");
+        String name = input.nextLine();
+
+        System.out.println("Please tell me the Seatamount.");
+        int seats = input.nextInt();
+
+        Car car = carFactory.GenerateCar(name, seats, false, CarType.Small, FuelType.Electro);
+
+        car.PrintData();
     }
 }
